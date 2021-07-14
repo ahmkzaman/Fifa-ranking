@@ -1,0 +1,209 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0%;
+}
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+/* header part  */
+
+.header-main {
+  height: 677px;
+  width: 1440px;
+  background-color: rgb(220, 151, 247);
+}
+.header-item {
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  margin-bottom: 52px;
+  padding-top: 100px;
+}
+.flex-area {
+  width: 40%;
+  padding-left: 100px;
+}
+.text-color {
+  color: white;
+}
+#text-area {
+  padding-left: 200px;
+}
+/* Football animation */
+.football {
+  padding-top: 100px;
+}
+.football {
+  transition: transform 1s;
+}
+.header-main:hover .football {
+  transform: translate(400px, -100px);
+}
+.football img {
+  width: 100px;
+  height: 100px;
+}
+.image-part img {
+  width: 556px;
+  height: 438px;
+}
+/* header link  */
+a {
+  text-decoration: none;
+}
+.link-btn {
+  width: 130px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 3px 20px #d567f6;
+  background-image: linear-gradient(
+    rgba(248, 98, 39, 0.952),
+    rgba(219, 13, 174, 0.835)
+  );
+}
+/* blog area */
+.blog-area {
+  background-color: rgba(248, 248, 248, 0.418);
+  width: 1040px;
+  padding-top: 70px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.players {
+  display: grid;
+  width: 35%;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-row-gap: 27px;
+}
+.player {
+  border: 10px solid white;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgb(221, 220, 220);
+}
+.player img {
+  height: 290px;
+  width: 290px;
+}
+.player-info {
+  height: 150px;
+  width: 280px;
+  text-align: justify;
+}
+/* footer-part */
+.footer-area {
+  background-color: rgba(248, 248, 248, 0.418);
+  display: grid;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+.icon div {
+  margin-right: 10px;
+}
+.logo img {
+  width: 250px;
+  height: 120px;
+}
+.copyright {
+  margin-left: 40px;
+  padding-bottom: 30px;
+}
+/* Media Queries */
+
+/* For Mobile Device */
+@media only screen and (max-width: 688px) {
+  .header-main {
+    width: 100%;
+    height: 800px;
+  }
+  .blog-area {
+    width: 100%;
+    margin: auto;
+  }
+  .header-item {
+    margin: 0%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #text-area {
+    padding-left: 30px;
+  }
+  .football {
+    display: none;
+  }
+  .image-part {
+    margin: auto;
+  }
+  .image-part img {
+    padding-top: 80px;
+
+    margin: 0%;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .player img {
+    width: 100%;
+  }
+  .footer-area {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding-left: 300px;
+  }
+}
+/* For Tablet  devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .header-main {
+    width: 100%;
+    height: 880px;
+    padding: 0;
+  }
+  .blog-area {
+    width: 100%;
+    padding: 0;
+  }
+  .header-item {
+    margin: 0%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex-area {
+    width: auto;
+    padding: auto;
+    margin: auto;
+  }
+  .blog-area {
+    background-color: white;
+    padding: 0%;
+  }
+  .image-part {
+    width: auto;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .footer-area {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: white;
+    padding-left: 250px;
+  }
+}
